@@ -1,0 +1,39 @@
+/* Style Sheet */
+
+.jumper {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.jumper:focus, .jumper:active {
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    border: 2px solid #00274c;
+    background-color: #ffcb05;
+}
+
+div:nth-of-type(-n + 3){
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    border: 3px solid #e91e63;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+div > * {
+    border: 3px solid #708090;
+    background-color: #999999;
+    border-radius: 50%;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+div > *:last-child {
+    border-radius: 0%;
+    grid-area: 4 / span 3;
+}
+
